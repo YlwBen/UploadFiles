@@ -12,3 +12,16 @@ ul{
     margin:auto;
     align-items: center;
 }
+
+#btnInscription{
+    margin-right: 10px;
+}
+
+#btnConnexion{
+    margin-left: 10px;
+
+}
+
+#affichage{
+    height: auto;
+}
