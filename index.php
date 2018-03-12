@@ -1,6 +1,6 @@
 <?php
-    include 'header.php'
-
+    include 'header.php';
+    include 'bdd/login.php';
 ?>
 
 <div class="container-fluid">
@@ -41,19 +41,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <form class="text-center" id="forminscription" action="index.php" method="POST">
+        <form class="text-center" id="formInscription" action="login.php" method="POST">
             <ul>
                 <li><input type="text" name="nom" placeholder="Nom"></li>
                 <li><input type="text" name="prenom" placeholder="Prenom"></li>
                 <li><input type="text" name="mail" placeholder="Adresse e-mail"></li>
                 <li><input type="text" name="mdp" placeholder="Mot de passe"></li>
             </ul>
+            <br />
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Validation</button>
+            </div>
         </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Validation</button>
-
       </div>
     </div>
   </div>
@@ -72,16 +72,17 @@
        </button>
      </div>
      <div class="modal-body">
-       <form class="text-center" action="index.php" method="post">
+       <form id="formConnexion" class="text-center" action="index.php" method="post">
            <ul>
-               <li><input type="text" name="mail" placeholder="Adresse e-mail"></li>
+               <li><input type="email" name="mail" placeholder="Adresse e-mail"></li>
                <li><input type="text" name="mdp" placeholder="Mot de passe"></li>
            </ul>
+           <br />
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             <button type="submit" class="btn btn-primary">Validation</button>
+           </div>
        </form>
-     </div>
-     <div class="modal-footer">
-       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-       <button type="submit" class="btn btn-primary">Validation</button>
      </div>
    </div>
  </div>
@@ -102,4 +103,4 @@
 <!-- Fin actions possibles de l'upload files -->
 
 
-<?php include 'footer.php' ?>
+<?php include 'footer.php'; ?>
