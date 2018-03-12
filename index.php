@@ -1,5 +1,8 @@
 <?php
-    include 'header.php'
+    include 'header.php';
+    include 'bdd/login.php';
+
+
 
 ?>
 
@@ -41,7 +44,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form class="text-center" id="forminscription" action="index.php" method="POST">
+        <form class="text-center" id="forminscription" action="login.php" method="POST">
             <ul>
                 <li><input type="text" name="nom" placeholder="Nom"></li>
                 <li><input type="text" name="prenom" placeholder="Prenom"></li>
