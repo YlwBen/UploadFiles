@@ -38,7 +38,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form class="text-center" action="index.php" method="post">
+        <form class="text-center" id="forminscription" action="index.php" method="POST">
             <ul>
                 <li><input type="text" name="nom" placeholder="Nom"></li>
                 <li><input type="text" name="prenom" placeholder="Prenom"></li>
@@ -50,10 +50,12 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Validation</button>
+
       </div>
     </div>
   </div>
 </div>
+    <?php include 'login.php'; ?>
     <!-- Fin du modal inscription -->
 
     <!-- Modal connexion -->
