@@ -1,4 +1,7 @@
-<?php include 'header.php' ?>
+<?php
+    include 'header.php'
+
+?>
 
 <div class="container-fluid">
     <h1 class="col-12 text-center">Upload Files !</h1>
@@ -38,7 +41,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form class="text-center" action="index.php" method="post">
+        <form class="text-center" id="forminscription" action="index.php" method="POST">
             <ul>
                 <li><input type="text" name="nom" placeholder="Nom"></li>
                 <li><input type="text" name="prenom" placeholder="Prenom"></li>
@@ -49,12 +52,14 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Validation</button>
+        <button type="submit" class="btn btn-primary">Validation</button>
+
       </div>
     </div>
   </div>
 </div>
-<!-- Fin du modal inscription -->
+
+    <!-- Fin du modal inscription -->
 
 <!-- Modal connexion -->
 <div class="modal fade" id="connexionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -76,7 +81,7 @@
      </div>
      <div class="modal-footer">
        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-       <button type="button" class="btn btn-primary">Validation</button>
+       <button type="submit" class="btn btn-primary">Validation</button>
      </div>
    </div>
  </div>
