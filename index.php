@@ -41,17 +41,17 @@
         </button>
       </div>
       <div class="modal-body">
-        <form class="text-center" id="formInscription" action="login.php" method="POST">
+        <form class="text-center" id="formInscription" action="" method="POST">
             <ul>
                 <li><input type="text" name="nom" placeholder="Nom"></li>
                 <li><input type="text" name="prenom" placeholder="Prenom"></li>
-                <li><input type="text" name="mail" placeholder="Adresse e-mail"></li>
+                <li><input type="mail" name="mail" placeholder="Adresse e-mail"></li>
                 <li><input type="text" name="mdp" placeholder="Mot de passe"></li>
             </ul>
             <br />
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Validation</button>
+              <button type="submit" name="formInscription" class="btn btn-primary">Validation</button>
             </div>
         </form>
       </div>
@@ -91,7 +91,12 @@
 
 <!-- Ecran d'affichage -->
 <div id="affichage" class="text-center">
-    <h2>C'est ici que nous recevons nos réponses.</h2>
+<?php
+    if (isset($erreur))
+    {
+        echo $erreur;
+    }
+ ?>
 </div>
 <!-- Fin d'ecran d'affichage -->
 

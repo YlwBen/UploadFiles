@@ -7,10 +7,9 @@ if(isset($_POST['formInscription']))
     {
         echo "ok";
     }
-    else {
-        {
-            echo "non";
-        }
+    else
+    {
+        $erreur = "Tous les champs doivent être complétés.";
     }
 }
 
