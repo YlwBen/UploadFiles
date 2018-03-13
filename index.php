@@ -104,7 +104,7 @@
 <!-- Fin d'ecran d'affichage -->
 
 <!-- Actions possibles de l'upload files -->
-<form class="text-center" action="function.php" method="post" enctype="multipart/form-data">
+<form class="text-center" action="upload.php" method="post" enctype="multipart/form-data">
     <input type="file" name="profile" id="exampleInputFile">
     <button type="button" class="btn" name="listfiles">Afficher mon activité</button>
     <button type="submit" class="btn btn-default">Envoyer</button>
