@@ -46,8 +46,8 @@
                 <li><input type="text" name="pseudo" placeholder="Pseudo" value="<?php if(isset($pseudo)) { echo $pseudo; } ?>"></li>
                 <li><input type="email" name="mail" placeholder="Adresse mail" value="<?php if(isset($mail)) { echo $mail; } ?>"></li>
                 <li><input type="email" name="mail2" placeholder="Confirmation adresse mail" value="<?php if(isset($mail2)) { echo $mail2; } ?>"></li>
-                <li><input type="text" name="pwd" placeholder="Mot de passe"></li>
-                <li><input type="text" name="pwd2" placeholder="Confirmation mot de passe"></li>
+                <li><input type="password" name="pwd" placeholder="Mot de passe"></li>
+                <li><input type="password" name="pwd2" placeholder="Confirmation mot de passe"></li>
             </ul>
             <br />
             <div class="modal-footer">
@@ -76,12 +76,12 @@
        <form id="formConnexion" class="text-center" action="index.php" method="post">
            <ul>
                <li><input type="text" name="pseudoConnect" placeholder="Pseudo"></li>
-               <li><input type="text" name="pwdConnect" placeholder="Mot de passe"></li>
+               <li><input type="password" name="pwdConnect" placeholder="Mot de passe"></li>
            </ul>
            <br />
            <div class="modal-footer">
              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-             <button type="submit" class="btn btn-primary">Validation</button>
+             <button type="submit" name="formConnexion" class="btn btn-primary">Validation</button>
            </div>
        </form>
      </div>
@@ -90,24 +90,13 @@
 </div>
 <!-- Fin du modal connexion -->
 
-<!-- Ecran d'affichage -->
-<div id="affichage" class="text-center">
-<?php
-    if (isset($erreur))
-    {
-        echo '<font color ="red">'.$erreur."</font>";
-    }else {
-        echo $ok;
-    }
- ?>
-</div>
-<!-- Fin d'ecran d'affichage -->
+<?php include 'affichage.php' ?>
 
 <!-- Actions possibles de l'upload files -->
 <form class="text-center" action="upload.php" method="post" enctype="multipart/form-data">
     <input type="file" name="profile" id="exampleInputFile">
-    <button type="button" class="btn" name="listfiles">Afficher mon activité</button>
     <button type="submit" class="btn btn-default">Envoyer</button>
+    <button type="button" class="btn" name="listfiles">Afficher mon activité</button>
 </form>
 <!-- Fin actions possibles de l'upload files -->
 
