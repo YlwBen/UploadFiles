@@ -1,6 +1,6 @@
 <?php
 
-function connectBDD(){
+function ConnectBDD(){
      $servername = "localhost";
      $username = "root";
      $password = "admin";
