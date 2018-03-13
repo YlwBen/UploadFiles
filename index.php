@@ -43,10 +43,11 @@
       <div class="modal-body">
         <form class="text-center" id="formInscription" action="" method="POST">
             <ul>
-                <li><input type="text" name="nom" placeholder="Nom"></li>
-                <li><input type="text" name="prenom" placeholder="Prenom"></li>
-                <li><input type="mail" name="mail" placeholder="Adresse e-mail"></li>
-                <li><input type="text" name="mdp" placeholder="Mot de passe"></li>
+                <li><input type="text" name="pseudo" placeholder="Pseudo" value="<?php if(isset($pseudo)) { echo $pseudo; } ?>"></li>
+                <li><input type="email" name="mail" placeholder="Adresse mail" value="<?php if(isset($mail)) { echo $mail; } ?>"></li>
+                <li><input type="email" name="mail2" placeholder="Confirmation adresse mail" value="<?php if(isset($mail2)) { echo $mail2; } ?>"></li>
+                <li><input type="text" name="pwd" placeholder="Mot de passe"></li>
+                <li><input type="text" name="pwd2" placeholder="Confirmation mot de passe"></li>
             </ul>
             <br />
             <div class="modal-footer">
@@ -74,8 +75,8 @@
      <div class="modal-body">
        <form id="formConnexion" class="text-center" action="index.php" method="post">
            <ul>
-               <li><input type="email" name="mail" placeholder="Adresse e-mail"></li>
-               <li><input type="text" name="mdp" placeholder="Mot de passe"></li>
+               <li><input type="text" name="pseudoConnect" placeholder="Pseudo"></li>
+               <li><input type="text" name="pwdConnect" placeholder="Mot de passe"></li>
            </ul>
            <br />
            <div class="modal-footer">
@@ -94,7 +95,9 @@
 <?php
     if (isset($erreur))
     {
-        echo $erreur;
+        echo '<font color ="red">'.$erreur."</font>";
+    }else {
+        echo $ok;
     }
  ?>
 </div>
