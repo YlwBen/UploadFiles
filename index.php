@@ -46,8 +46,8 @@
                 <li><input type="text" name="pseudo" placeholder="Pseudo" value="<?php if(isset($pseudo)) { echo $pseudo; } ?>"></li>
                 <li><input type="email" name="mail" placeholder="Adresse mail" value="<?php if(isset($mail)) { echo $mail; } ?>"></li>
                 <li><input type="email" name="mail2" placeholder="Confirmation adresse mail" value="<?php if(isset($mail2)) { echo $mail2; } ?>"></li>
-                <li><input type="text" name="pwd" placeholder="Mot de passe"></li>
-                <li><input type="text" name="pwd2" placeholder="Confirmation mot de passe"></li>
+                <li><input type="password" name="pwd" placeholder="Mot de passe"></li>
+                <li><input type="password" name="pwd2" placeholder="Confirmation mot de passe"></li>
             </ul>
             <br />
             <div class="modal-footer">
