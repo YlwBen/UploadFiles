@@ -104,10 +104,11 @@
 <!-- Fin d'ecran d'affichage -->
 
 <!-- Actions possibles de l'upload files -->
-<div class="text-center">
-    <input type="file" name="uploadfiles">
-    <button type="button" name="listfiles">Afficher mon activité</button>
-</div>
+<form class="text-center" action="function.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="profile" id="exampleInputFile">
+    <button type="button" class="btn" name="listfiles">Afficher mon activité</button>
+    <button type="submit" class="btn btn-default">Envoyer</button>
+</form>
 <!-- Fin actions possibles de l'upload files -->
 
 

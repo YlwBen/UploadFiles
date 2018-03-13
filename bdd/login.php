@@ -53,5 +53,4 @@ if(isset($_POST['formInscription']))
         $erreur = "Tous les champs doivent être complétés.";
     }
 }
-
 ?>
