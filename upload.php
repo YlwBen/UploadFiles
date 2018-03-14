@@ -1,5 +1,6 @@
 <?php
 
+
 if(isset($_FILES) & !empty($_FILES)){
     $name = $_FILES['profile']['name'];
     $size = $_FILES['profile']['size'];

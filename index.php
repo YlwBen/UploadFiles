@@ -93,11 +93,12 @@
 <?php include 'affichage.php' ?>
 
 <!-- Actions possibles de l'upload files -->
-<form class="text-center" action="upload.php" method="post" enctype="multipart/form-data">
-    <input type="file" name="profile" id="exampleInputFile">
-    <button type="submit" class="btn btn-default">Envoyer</button>
+<form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <button type="submit" name="submit" value="Upload Image" class="btn btn-default">Envoyer</button>
     <button type="button" class="btn" name="listfiles">Afficher mon activité</button>
 </form>
+
 <!-- Fin actions possibles de l'upload files -->
 
 
