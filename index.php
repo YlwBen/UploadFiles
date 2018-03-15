@@ -94,11 +94,16 @@
 
 <!-- Actions possibles de l'upload files -->
 <form class="text-center" action="upload.php" method="post" enctype="multipart/form-data">
-    <input type="file" name="profile" id="exampleInputFile">
-    <button type="submit" class="btn btn-default">Envoyer</button>
-    <button type="button" class="btn" name="listfiles">Afficher mon activité</button>
+    <input type="file" class="btn" name="fileToUpload" id="fileToUpload">
+    <button type="submit" value="Upload Image" name="submit" class="btn btn-default">Envoyer</button>
 </form>
 <!-- Fin actions possibles de l'upload files -->
+
+<!-- Afficher l'activité du compte -->
+<div class="text-center">
+    <button type="button" class="btn" name="listfiles">Afficher mon activité</button>
+</div>
+<!-- Fin afficher l'activité du compte -->
 
 
 <?php include 'footer.php'; ?>
