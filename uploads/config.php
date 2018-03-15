@@ -1,11 +1,23 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "admin";
-$dbname = "BDDWeTransfert";
 
-error_reporting(E_ALL);
-define( “DB_DSN”, “mysql:host=$servername;dbname=$dbname );
-define( “DB_USERNAME”, $username );
-define( “DB_PASSWORD”, $password );
+
+// $connect=connectBDD();
+
+function connectBDD(){
+    $servername = "localhost";
+    $username = "root";
+    $password = "admin";
+    $dbname = "BDDWeTransfert";
+    try {
+        $connect = new PDO("mysql:host=$servername;dbname=$dbname; charset=utf8", $username, $password);
+        // set the PDO error mode to exception
+        $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $connect;
+        }
+    catch(PDOException $e)
+        {
+        echo "Connection failed: " . $e->getMessage();
+        }
+
+};
 ?>
