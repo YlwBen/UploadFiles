@@ -1,4 +1,6 @@
 <?php
+// Start the session
+session_start();
 
 include 'fetch.php';
 
@@ -19,7 +21,7 @@ function upload($connect){
             return $msg;
         }
         // Check file size
-        if ($_FILES["fileToUpload"]["size"] > 500000) {
+        if ($_FILES["fileToUpload"]["size"] > 3000) {
             echo "Sorry, ton fichier est trop lourd.";
         }
 

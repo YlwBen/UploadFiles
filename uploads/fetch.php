@@ -1,4 +1,6 @@
 <?php
+// Start the session
+session_start();
 
 include "config.php";
 $connect=connectBDD();
@@ -15,7 +17,7 @@ function uploadBDD($connect){
 
     try{
         $stmt = $connect->prepare("INSERT INTO `data` (name, size, type, location) VALUES ('$name', '$size', '$type', '$location')");
-        
+
         $stmt->execute();
     }
     catch(PDOExeption $e){

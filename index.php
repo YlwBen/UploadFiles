@@ -1,6 +1,8 @@
 <?php
     include 'header.php';
     include 'bdd/login.php';
+    // Start the session
+session_start();
 ?>
 
 <div class="container-fluid">
@@ -29,7 +31,7 @@
     </div>
 </nav>
  <!-- Fin de navigation haut de page -->
- 
+
 <!-- Modal inscription -->
 <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
