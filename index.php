@@ -29,7 +29,7 @@
     </div>
 </nav>
  <!-- Fin de navigation haut de page -->
- 
+
 <!-- Modal inscription -->
 <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -95,7 +95,7 @@
 <!-- Actions possibles de l'upload files -->
 <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
     <input type="file" name="fileToUpload" id="fileToUpload">
-    <button type="submit" name="submit" value="Upload Image" class="btn btn-default">Envoyer</button>
+    <button type="submit" name="envoiFile" value="Upload Image" class="btn btn-default">Envoyer</button>
 </form>
 <!-- Fin actions possibles de l'upload files -->
 
