@@ -1,6 +1,5 @@
 <?php
-// include 'config.php';
-// include_once("config.php");
+
 include 'fetch.php';
 
 $connect=connectBDD();
@@ -24,18 +23,17 @@ function upload($connect){
             echo "Sorry, ton fichier est trop lourd.";
         }
 
-
-        move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file);
-
-
+        if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file)){
+            echo "L'image ".  basename( $_FILES['fileToUpload']['name']).
+                "a bien été chargé!";
+        }
 
         header("Location: ../index.php");
     }
     catch(Exception $e){
             echo "Request failed : " . $e->getMessage();
     }
-
 }
     upload($connect);
-    uploadBDD($connect);
+
 ?>
