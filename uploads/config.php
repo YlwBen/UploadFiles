@@ -1,8 +1,5 @@
 <?php
 
-
-// $connect=connectBDD();
-
 function connectBDD(){
     $servername = "localhost";
     $username = "root";
