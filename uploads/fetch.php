@@ -1,6 +1,6 @@
 <?php
-session_start();
-include "config.php";
+
+include "../bdd/ConnectBDD.php";
 $connect=connectBDD();
 function uploadBDD($connect){
     if(isset($_FILES) & !empty($_FILES)){
