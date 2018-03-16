@@ -1,8 +1,9 @@
 <?php
+// Start the session
+session_start();
     include 'header.php';
     include 'bdd/login.php';
-    // Start the session
-session_start();
+
 ?>
 
 <div class="container-fluid">
@@ -97,7 +98,7 @@ session_start();
 <!-- Actions possibles de l'upload files -->
 <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
     <input type="file" name="fileToUpload" id="fileToUpload">
-    <button type="submit" name="submit" value="Upload Image" class="btn btn-default">Envoyer</button>
+    <button type="submit" name="envoiFile" value="Upload Image" class="btn btn-default">Envoyer</button>
 </form>
 <!-- Fin actions possibles de l'upload files -->
 
