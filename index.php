@@ -80,7 +80,7 @@ session_start();
            <br />
            <div class="modal-footer">
              <button type="button" class="btn modal-btn" data-dismiss="modal">Annuler</button>
-             <button type="submit" name="formConnexion" class="btn modal-btn">Validater</button>
+             <button type="submit" name="formConnexion" class="btn modal-btn">Valider</button>
            </div>
        </form>
      </div>
@@ -106,6 +106,10 @@ session_start();
     </form>
 </div>
 
+<!-- Fin actions possibles de l'upload files -->
+
+<!-- Afficher l'activité du compte -->
+
 <div class="col-6 offset-3 fileChooser p-3">
     <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
         <div class="col-12 displayActivity">
@@ -117,12 +121,6 @@ session_start();
     </form>
 </div>
 
-<!-- Fin actions possibles de l'upload files -->
-
-<!-- Afficher l'activité du compte -->
-<div class="text-center">
-    <button type="button" class="btn" name="listfiles">Afficher mon activité</button>
-</div>
 <!-- Fin afficher l'activité du compte -->
 
 
