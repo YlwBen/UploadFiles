@@ -1,6 +1,7 @@
 <?php
     include 'header.php';
     include 'bdd/login.php';
+    // include 'uploads/store.php';
 ?>
  <!-- Navigation haut de page // A finir, faire entièrement en js ?-->
 <nav id="navigation" class="navbar navbar-expand-lg navbar-light mainNav">
@@ -26,7 +27,7 @@
 
  <!-- Fin de navigation haut de page -->
 
- <!-- Modal inscription -->
+<!-- Modal inscription -->
 <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content myModal">
@@ -56,7 +57,7 @@
   </div>
 </div>
 
-    <!-- Fin du modal inscription -->
+<!-- Fin du modal inscription -->
 
 <!-- Modal connexion -->
 <div class="modal fade" id="connexionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -91,29 +92,17 @@
 
 
 <!-- Actions possibles de l'upload files -->
-<div class="col-6 offset-3 fileChooser p-3">
-    <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
-        <div class="col-12 mb-2">
-            <input type="file" name="fileToUpload" id="fileToUpload">
-        </div>
-        <div class="col-12 mb-2">
-            <button type="submit" name="submit" value="Upload Image" class="btn last-btn">Envoyer</button>
-        </div>
-    </form>
-</div>
-
-<div class="col-6 offset-3 fileChooser p-3">
-    <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
-        <div class="col-12 displayActivity">
-            <button type="button" class="btn last-btn" name="listfiles">Afficher mon activité</button>
-        </div>
-        <div class="col-12">
-            <!-- Si possible, afficher les uploads ici -->
-        </div>
-    </form>
-</div>
-
+<form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <button type="submit" name="envoiFile" value="Upload Image" class="btn btn-default">Envoyer</button>
+</form>
 <!-- Fin actions possibles de l'upload files -->
+
+<!-- Afficher l'activité du compte -->
+<div class="text-center">
+    <button type="button" class="btn" name="listfiles">Afficher mon activité</button>
+</div>
+<!-- Fin afficher l'activité du compte -->
 
 
 <?php include 'footer.php'; ?>
