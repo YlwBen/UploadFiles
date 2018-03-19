@@ -16,7 +16,7 @@ function upload($connect){
 
     if($lastpage === "http://localhost/UploadFiles/index.php?id=".$_SESSION['id']){
         echo "C'est un membre du site.";
-        if (($size <= 70000) AND ($size > 30000)) {
+        if (($size <= 700000) AND ($size > 300000)) {
             echo "Un fichier a été trouvé, on continue. ";
             if (file_exists($target_file))
             {
@@ -36,7 +36,7 @@ function upload($connect){
         }
     }else{
         echo "C'est un inconnu. ";
-        if (($size <= 30000) AND ($size > 0)) {
+        if (($size <= 300000) AND ($size > 0)) {
             echo "Un fichier a été trouvé, on continue. ";
             if (file_exists($target_file))
             {

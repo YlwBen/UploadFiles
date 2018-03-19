@@ -111,7 +111,7 @@
 <div class="col-6 offset-3 fileChooser p-3">
     <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
         <div class="col-12 displayActivity">
-            <button type="button" class="btn last-btn" name="listfiles">Afficher mon activité</button>
+            <button type="button" class="btn last-btn" name="listfiles">Activité</button>
         </div>
         <div class="col-12">
             <!-- Si possible, afficher les uploads ici -->
