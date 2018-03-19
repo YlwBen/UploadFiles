@@ -3,7 +3,7 @@
 session_start();
     include 'header.php';
     include 'bdd/login.php';
-
+    // include 'uploads/store.php';
 ?>
 
 <div class="container-fluid">
