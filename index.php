@@ -104,6 +104,10 @@
     </form>
 </div>
 
+<!-- Fin actions possibles de l'upload files -->
+
+<!-- Afficher l'activité du compte -->
+
 <div class="col-6 offset-3 fileChooser p-3">
     <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
         <div class="col-12 displayActivity">
@@ -115,12 +119,6 @@
     </form>
 </div>
 
-<!-- Fin actions possibles de l'upload files -->
-
-<!-- Afficher l'activité du compte -->
-<div class="text-center">
-    <button type="button" class="btn" name="listfiles">Afficher mon activité</button>
-</div>
 <!-- Fin afficher l'activité du compte -->
 
 
