@@ -78,7 +78,7 @@
            <br />
            <div class="modal-footer">
              <button type="button" class="btn modal-btn" data-dismiss="modal">Annuler</button>
-             <button type="submit" name="formConnexion" class="btn modal-btn">Validater</button>
+             <button type="submit" name="formConnexion" class="btn modal-btn">Valider</button>
            </div>
        </form>
      </div>
