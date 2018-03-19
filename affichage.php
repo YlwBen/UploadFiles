@@ -14,8 +14,8 @@ if(isset($_GET['id']) AND $_GET['id'] > 0)
     $requser->execute(array($getid));
     $userinfo = $requser->fetch();
 
-    echo '<font color ="blue">Pseudo : '.$userinfo['pseudo']."</font> <br />";
-    echo '<font color ="blue">Mail : '.$userinfo['email']."</font> <br />";
+    echo '<font color ="white">Pseudo : '.$userinfo['pseudo']."</font> <br />";
+    echo '<font color ="white">Mail : '.$userinfo['email']."</font> <br />";
 }
   ?>
 

@@ -1,5 +1,5 @@
 body {
-    background: url("../img/wallpaper.png") no-repeat center center fixed;
+    background: url("../wallpaper/wallpaper.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -55,7 +55,7 @@ body {
 }
 
 .modal-btn:hover {
-    background: #ff8300;
+    background: none;
     border: solid #353535;;
     color: #353535;
 }
@@ -68,7 +68,7 @@ body {
 }
 
 .last-btn:hover{
-    background: #ff8300;
+    background: none;
     border: solid #353535;
     color: #353535
 }
@@ -111,6 +111,7 @@ body {
 }
 
 #affichage{
+    padding-top : 20px;
     height: auto;
 }
 
