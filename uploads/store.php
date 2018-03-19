@@ -14,9 +14,10 @@ function upload($connect){
     $tmp_name = $_FILES['fileToUpload']['tmp_name']; // Lien de DL ?
     $location = "../upload/img/".$name;
 
+    var_dump($_FILES);
     if($lastpage === "http://localhost/UploadFiles/index.php?id=".$_SESSION['id']){
         echo "C'est un membre du site.";
-        if (($size <= 70000) AND ($size > 30000)) {
+        if ($size <= 7340032) {
             echo "Un fichier a été trouvé, on continue. ";
             if (file_exists($target_file))
             {
@@ -36,7 +37,7 @@ function upload($connect){
         }
     }else{
         echo "C'est un inconnu. ";
-        if (($size <= 30000) AND ($size > 0)) {
+        if ($size <= 3145728) {
             echo "Un fichier a été trouvé, on continue. ";
             if (file_exists($target_file))
             {
