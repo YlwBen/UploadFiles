@@ -92,10 +92,29 @@
 
 
 <!-- Actions possibles de l'upload files -->
-<form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <button type="submit" name="envoiFile" value="Upload Image" class="btn btn-default">Envoyer</button>
-</form>
+
+<div class="col-6 offset-3 fileChooser p-3">
+    <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
+        <div class="col-12 mb-2">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+        </div>
+        <div class="col-12 mb-2">
+            <button type="submit" name="envoiFile" value="Upload Image" class="btn last-btn">Envoyer</button>
+        </div>
+    </form>
+</div>
+
+<div class="col-6 offset-3 fileChooser p-3">
+    <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
+        <div class="col-12 displayActivity">
+            <button type="button" class="btn last-btn" name="listfiles">Afficher mon activité</button>
+        </div>
+        <div class="col-12">
+            <!-- Si possible, afficher les uploads ici -->
+        </div>
+    </form>
+</div>
+
 <!-- Fin actions possibles de l'upload files -->
 
 <!-- Afficher l'activité du compte -->
