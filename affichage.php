@@ -3,7 +3,7 @@
 <?php
 if (isset($msg))
 {
-    echo '<font color ="red">'.$msg."</font>  <br />";
+    echo "<font color ='red'>".$msg."</font>  <br />";
 }
  ?>
  <?php

@@ -1,27 +1,130 @@
+body {
+    background: url("../img/wallpaper.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .box{
     border: 1px solid black;
 }
 
-#navigation{
-    /* background-color: #4FC3F7;
-  /* border : 1px solid white; */
-    /* font-family: 'Righteous', cursive;  */
+.mainNav{
+    background-color: #ff8300;
 }
 
-ul{
-    margin:auto;
-    align-items: center;
+.mainTitle{
+    font-family: 'Poller One', cursive;
+    font-style: italic;
+    font-size: 28px;
+    margin-left: 62px;
+}
+
+.burgerBtn{
+    border: solid black;
+}
+
+.modal-content{
+    background-color: rgb(255, 131, 0, 0.9);
+}
+
+.modal-header, .modal-footer{
+    border-color: #353535;
+    border-width: 3px;
+}
+
+.modal-title{
+    font-family: 'Poller One', cursive;
+    color: #353535;
+}
+
+.my-2{
+    background-color: #353535;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #353535;
+    color: white;
+}
+
+.modal-btn{
+    font-family: 'Poller One', cursive;
+    background: #353535;
+    border: solid #353535;
+    color: #ff8300;
+}
+
+.modal-btn:hover {
+    background: #ff8300;
+    border: solid #353535;;
+    color: #353535;
+}
+
+.last-btn{
+    font-family: 'Poller One', cursive;
+    background: #353535;
+    border: solid #353535;
+    color: #ff8300;
+}
+
+.last-btn:hover{
+    background: #ff8300;
+    border: solid #353535;
+    color: #353535
 }
 
 #btnInscription{
-    margin-right: 10px;
+    font-family: 'Poller One', cursive;
+    margin: 10px;
+    background: #353535;
+    border: solid #353535;
+    color: #ff8300;
 }
 
 #btnConnexion{
-    margin-left: 10px;
+    font-family: 'Poller One', cursive;
+    margin: 10px;
+    background: #353535;
+    border: solid #353535;
+    color: #ff8300;
+}
 
+#btnInscription:hover, #btnConnexion:hover{
+    background: none;
+    border: solid #353535;
+    color: #353535;
+}
+
+.fileChooser{
+    background-color: rgb(255, 131, 0, 0.75);
+    border: solid rgb(255, 131, 0);
+    border-radius: 7px;
+    margin-top: 3rem;
 }
 
 #affichage{
     height: auto;
+}
+
+.displayActivity{
+    border-bottom: 3px solid #353535;
+    padding-bottom: 1rem;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+@media screen and (max-height: 670px){
+    .mainTitle{font-size: 23px;}
+    #btnInscription{font-size: 13px;}
+    #btnConnexion{font-size: 13px;}
+}
+@media screen and (max-width: 1600px){
+    .mainTitle{margin-left: 0px;}
 }
