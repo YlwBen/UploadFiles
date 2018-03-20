@@ -17,6 +17,7 @@ body {
     color: #353535;
     margin: 10px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .box{
