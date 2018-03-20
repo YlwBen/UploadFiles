@@ -81,7 +81,7 @@
 <div class="col-6 offset-3 fileChooser p-3">
     <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
         <div class="col-12 mb-2">
-            <label for="fileToUpload" class="label-file">Parcourir fichiers...</label>
+            <label for="fileToUpload" class="label-file">Parcourir les fichiers...</label>
             <input class="input-file" type="file" name="fileToUpload" id="fileToUpload">
         </div>
         <div class="col-12 mb-2">

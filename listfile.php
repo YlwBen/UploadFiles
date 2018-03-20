@@ -8,7 +8,7 @@ function listActivity(){
     $result->execute();
     while ($data = $result->fetch()){
 ?>
-        <p>
+        <p class="my-4 listActivity">
             <strong>Fichier</strong> : <?php echo $data['name']; ?>; <br />
             <strong>Type de fichier</strong> : <?php echo $data['type']; ?>; <strong>Taille du Fichier</strong> : <?php echo $data['size']; ?> octets; <strong>Date</strong> : <?php echo $data['date']; ?>
         </p>

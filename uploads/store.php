@@ -16,7 +16,7 @@ function upload($connect){
 
     if($lastpage === "http://localhost/AFORMAC2017/UploadFiles/index.php?id=".$_SESSION['id']){
         echo "C'est un membre du site.";
-        if (($size <= 7340032) AND ($size > 0)){
+        if (($size <= 7340032) AND ($size > 0)) {
             echo "Un fichier a été trouvé, on continue. ";
             if (file_exists($target_file))
             {
