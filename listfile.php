@@ -4,7 +4,7 @@
 
 function listActivity(){
     $connect = connectBDD();
-    $result = $connect->prepare("SELECT * FROM `data` WHERE `iduser` = ".$_SESSION ['id'].";");
+    $result = $connect->prepare("SELECT * FROM `data` WHERE `iduser` = ".$_SESSION ['id']." ORDER BY id DESC;");
     $result->execute();
     while ($data = $result->fetch()){
 ?>
