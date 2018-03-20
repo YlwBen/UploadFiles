@@ -7,7 +7,7 @@
             <button class='navbar-toggler burgerBtn' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                 <span class='navbar-toggler-icon'></span>
             </button>
-            <div class='collapse navbar-collapse col-12 col-lg-2' id='navbarSupportedContent'>
+            <div class='collapse navbar-collapse col-12 col-lg-1' id='navbarSupportedContent'>
                 <a id='btnDeconnexion' type='button' class='btn' href='uploads/deconnexion.php'>Déconnexion</a>
             </div>
         </nav>";

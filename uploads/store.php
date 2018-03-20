@@ -58,7 +58,5 @@ function upload($connect){
     }
     $_SESSION['message'] = $msg;
     header('location:'.$lastpage);
-
-
 }
 ?>
