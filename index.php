@@ -100,7 +100,7 @@
         <div class="col-12 displayActivity">
             <button id="activity" type="button" class="btn last-btn" name="listfiles">Activités</button>
         </div>
-        <div class="col-12" id="resultList">
+        <div class="col-12 text-truncate" id="resultList">
             <?php
             if(isset($_SESSION ['id'])){
                 listActivity();
