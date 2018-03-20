@@ -22,9 +22,7 @@ session_start();
                 <button id="btnConnexion" type="button" class="btn" data-toggle="modal" data-target="#connexionModal">
                     Connexion
                 </button>
-                <a href="uploads/deconnexion.php">Se deconnecter</a>
-                
-
+                <a id="btnDeconnexion" type="button" class="btn" href="uploads/deconnexion.php">Déconnexion</a>
             </li>
         </ul>
     </div>
