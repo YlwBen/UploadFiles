@@ -14,9 +14,9 @@ function upload($connect){
     $tmp_name = $_FILES['fileToUpload']['tmp_name']; // Lien de DL ?
     $location = "../upload/img/".$name;
 
-    if($lastpage === "http://localhost/UploadFiles/index.php?id=".$_SESSION['id']){
+    if($lastpage === "http://localhost/UploadFiles/index.php?id=".$_SESSION['id']){ // Il faut rajouter /Projets Principaux à l'url
         echo "C'est un membre du site.";
-        if ($size <= 7340032) {
+        if (($size <= 7340032) AND ($size > 0)) {
             echo "Un fichier a été trouvé, on continue. ";
             if (file_exists($target_file))
             {
@@ -36,7 +36,7 @@ function upload($connect){
         }
     }else{
         echo "C'est un inconnu. ";
-        if ($size <= 3145728) {
+        if (($size <= 3145728) AND ($size > 0)){
             echo "Un fichier a été trouvé, on continue. ";
             if (file_exists($target_file))
             {
