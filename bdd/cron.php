@@ -46,6 +46,8 @@ function selectFileAndDeleteFile($connect){
 
 selectFileAndDeleteFile($connect);
 
+selectFileAndDeleteFileLog($connect);
+
 // effacer les nom de fichiers dans la BDD
 
 deleteFileFromDB($connect);
