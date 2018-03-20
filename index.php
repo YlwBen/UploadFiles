@@ -23,6 +23,7 @@
                     Connexion
                 </button>
             </li>
+            <a id="btnDeconnexion" type="button" class="btn" href="uploads/deconnexion.php">Déconnexion</a>
         </ul>
     </div>
 </nav>
@@ -114,10 +115,14 @@
 <div class="col-6 offset-3 fileChooser p-3">
     <form class="text-center" action="listfile.php" method="post" enctype="multipart/form-data">
         <div class="col-12 displayActivity">
-            <button type="button" class="btn last-btn" name="listfiles">Activité</button>
+            <button type="button" class="btn last-btn" name="listfiles">Activités</button>
         </div>
         <div class="col-12" id="resultList">
-            <?php listActivity(); ?>
+            <?php
+            if(isset($_SESSION ['id'])){
+                listActivity();
+            }
+            ?>
         </div>
     </form>
 </div>

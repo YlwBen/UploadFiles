@@ -6,7 +6,6 @@ function listActivity(){
     $connect = connectBDD();
     $result = $connect->prepare("SELECT * FROM `data` WHERE `iduser` = ".$_SESSION ['id'].";");
     $result->execute();
-    $data = $result->fetch();
     while ($data = $result->fetch()){
 ?>
         <p>

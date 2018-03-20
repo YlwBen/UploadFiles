@@ -7,16 +7,17 @@ if (isset($msg))
 }
  ?>
  <?php
-if(isset($_GET['id']) AND $_GET['id'] > 0)
+if(isset($_SESSION['id']) AND $_SESSION['id'] > 0)
 {
-    $getid = intval($_GET['id']);
+    $sessionid = intval($_SESSION['id']);
     $requser = $connect->prepare('SELECT * FROM user WHERE id = ?');
-    $requser->execute(array($getid));
+    $requser->execute(array($sessionid));
     $userinfo = $requser->fetch();
 
-    echo '<font color ="blue">Pseudo : '.$userinfo['pseudo']."</font> <br />";
-    echo '<font color ="blue">Mail : '.$userinfo['email']."</font> <br />";
+    echo '<font color ="white">Pseudo : '.$userinfo['pseudo']."</font> <br />";
+    echo '<font color ="white">Mail : '.$userinfo['email']."</font> <br />";
 }
   ?>
+
 </div>
 <!-- Fin d'ecran d'affichage -->
