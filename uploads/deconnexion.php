@@ -1,5 +1,6 @@
 <?php
 
+echo "deconnecter";
 
 $_SESSION["user"] = NULL;
 
