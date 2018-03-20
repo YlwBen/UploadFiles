@@ -3,7 +3,7 @@
 <?php
 if (isset($msg))
 {
-    echo "<font color ='red'>".$msg."</font>  <br />";
+    echo '<h5 class="loginError">'.$msg.'</h5>  <br />';
 }
  ?>
  <?php
@@ -14,11 +14,11 @@ if(isset($_SESSION['id']) AND $_SESSION['id'] > 0)
     $requser->execute(array($sessionid));
     $userinfo = $requser->fetch();
 
-    echo '<font color ="white">Pseudo : '.$userinfo['pseudo']."</font> <br />";
-    echo '<font color ="white">Mail : '.$userinfo['email']."</font> <br />";
+    echo '<h5 class="loginLog">Pseudo : '.$userinfo['pseudo']."</h5> <br />";
+    echo '<h5 class="loginLog">Mail : '.$userinfo['email']."</h5> <br />";
 
     if (isset($_SESSION['message'])){
-        echo '<font color ="white">Mail : '.$_SESSION['message']."</font> <br />";
+        echo '<div class="loginLog">Message : '.$_SESSION['message']."</div> <br />";
     }
 
 }

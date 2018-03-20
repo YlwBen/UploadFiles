@@ -10,6 +10,16 @@ body {
     display: none;
 }
 
+.loginLog{
+    font-family: 'Poller One', cursive;
+    color: #ff8300;
+}
+
+.loginError{
+    font-family: 'Poller One', cursive;
+    color: red;
+}
+
 .label-file{
     font-family: 'Poller One', cursive;
     background: none;
@@ -148,6 +158,12 @@ body {
 	overflow: hidden;
 	position: absolute;
 	z-index: -1;
+}
+
+.listActivity{
+    font-size:20px;
+    border-bottom: 1px solid #353535;
+    color: #353535;
 }
 
 @media screen and (max-height: 670px){

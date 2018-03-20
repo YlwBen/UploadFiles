@@ -16,7 +16,7 @@ function upload($connect){
 
     if(isset($_SESSION['id']) AND ($_SESSION['id'] > 0)) {
         echo "C'est un membre du site.";
-        if (($size <= 7340032) AND ($size > 0)){
+        if (($size <= 7340032) AND ($size > 0)) {
             echo "Un fichier a été trouvé, on continue. ";
             if (file_exists($target_file))
             {
@@ -56,9 +56,13 @@ function upload($connect){
             $msg = "STOP ! Soit votre fichier dépasse 3Mo soit il n'y a pas de fichier. ";
         }
 
+<<<<<<< HEAD
     }
     $_SESSION['message'] = $msg;
     header('location:'.$lastpage);
+=======
+    }header('location: ../index.php');
+>>>>>>> 69472f18581e7306f18ed767023de95db32adde5
 
 }
 ?>
