@@ -16,6 +16,11 @@ if(isset($_SESSION['id']) AND $_SESSION['id'] > 0)
 
     echo '<font color ="white">Pseudo : '.$userinfo['pseudo']."</font> <br />";
     echo '<font color ="white">Mail : '.$userinfo['email']."</font> <br />";
+
+    if (isset($_SESSION['message'])){
+        echo '<font color ="white">Mail : '.$_SESSION['message']."</font> <br />";
+    }
+
 }
   ?>
 

@@ -2,11 +2,11 @@
     include 'header.php';
     include 'bdd/login.php';
     include 'listfile.php';
-
-    // include 'uploads/store.php';
+    //include 'uploads/store.php';
 ?>
- <!-- Navigation haut de page // A finir, faire entièrement en js ?-->
-<?php include 'btnnav.php' ?>
+
+ <!-- Navigation haut de page -->
+<?php include 'navigation.php' ?>
  <!-- Fin de navigation haut de page -->
 
 <!-- Modal inscription -->
@@ -74,6 +74,7 @@
 <?php include 'affichage.php' ?>
 
 
+
 <!-- Actions possibles de l'upload files -->
 
 <div class="col-6 offset-3 fileChooser p-3">
@@ -95,7 +96,7 @@
 <div class="col-6 offset-3 fileChooser p-3">
     <form class="text-center" action="listfile.php" method="post" enctype="multipart/form-data">
         <div class="col-12 displayActivity">
-            <button type="button" class="btn last-btn" name="listfiles">Activités</button>
+            <button id="activity" type="button" class="btn last-btn" name="listfiles">Activités</button>
         </div>
         <div class="col-12" id="resultList">
             <?php

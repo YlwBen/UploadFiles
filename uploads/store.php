@@ -14,25 +14,26 @@ function upload($connect){
     $tmp_name = $_FILES['fileToUpload']['tmp_name']; // Lien de DL ?
     $location = "../upload/img/".$name;
 
-    if($lastpage === "http://localhost/UploadFiles/index.php?id=".$_SESSION['id']){
+    if(isset($_SESSION['id']) AND ($_SESSION['id'] > 0)) {
         echo "C'est un membre du site.";
         if (($size <= 7340032) AND ($size > 0)){
             echo "Un fichier a été trouvé, on continue. ";
             if (file_exists($target_file))
             {
-                echo "Ce nom de fichier est déjà dans '/img', on s'arrête. ";
+                $msg = "Ce nom de fichier est déjà dans '/img', on s'arrête. ";
 
             }else
             {
-                echo "Enregistré sous ".$_FILES['fileToUpload']['name'];
+                $msg = "Enregistré sous ".$_FILES['fileToUpload']['name'];
                 echo '<br />';
                 echo "Dernière page visité : ".$lastpage;
                 move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file);
             }
+
         }
         else
         {
-            echo "STOP ! Soit votre fichier dépasse 7Mo soit il n'y a pas de fichier. ";
+            $msg = "STOP ! Soit votre fichier dépasse 7Mo soit il n'y a pas de fichier. ";
         }
     }else{
         echo "C'est un inconnu. ";
@@ -40,11 +41,11 @@ function upload($connect){
             echo "Un fichier a été trouvé, on continue. ";
             if (file_exists($target_file))
             {
-                echo "Ce nom de fichier est déjà dans '/img', on s'arrête. ";
+                $msg = "Ce nom de fichier est déjà dans '/img', on s'arrête. ";
 
             }else
             {
-                echo "Enregistré sous ".$_FILES['fileToUpload']['name'];
+                $msg = "Enregistré sous ".$_FILES['fileToUpload']['name'];
                 echo '<br />';
                 echo "Dernière page visité : ".$lastpage;
                 move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file);
@@ -52,10 +53,12 @@ function upload($connect){
         }
         else
         {
-            echo "STOP ! Soit votre fichier dépasse 3Mo soit il n'y a pas de fichier. ";
+            $msg = "STOP ! Soit votre fichier dépasse 3Mo soit il n'y a pas de fichier. ";
         }
 
     }
+    $_SESSION['message'] = $msg;
+    header('location:'.$lastpage);
 
 }
 ?>
