@@ -2,12 +2,13 @@
     include 'header.php';
     include 'bdd/login.php';
     include 'listfile.php';
-    include 'cron.php';
+    // include 'cron.php';
+
 
     // include 'uploads/store.php';
 ?>
  <!-- Navigation haut de page // A finir, faire entièrement en js ?-->
-<?php include 'btnnav.php' ?>
+<?php include 'navigation.php' ?>
  <!-- Fin de navigation haut de page -->
 
 <!-- Modal inscription -->
