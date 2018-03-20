@@ -166,6 +166,10 @@ body {
     color: #353535;
 }
 
+#resultList{
+    display: none;
+}
+
 @media screen and (max-height: 670px){
     .mainTitle{font-size: 23px;}
     #btnInscription{font-size: 13px;}
