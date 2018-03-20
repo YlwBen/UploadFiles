@@ -14,7 +14,6 @@ function upload($connect){
     $tmp_name = $_FILES['fileToUpload']['tmp_name']; // Lien de DL ?
     $location = "../upload/img/".$name;
 
-    var_dump($_FILES);
     if($lastpage === "http://localhost/UploadFiles/index.php?id=".$_SESSION['id']){
         echo "C'est un membre du site.";
         if ($size <= 7340032) {
