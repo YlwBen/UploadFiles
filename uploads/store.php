@@ -55,7 +55,7 @@ function upload($connect){
             echo "STOP ! Soit votre fichier dépasse 3Mo soit il n'y a pas de fichier. ";
         }
 
-    }
+    }header('location: ../index.php');
 
 }
 ?>

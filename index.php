@@ -2,6 +2,8 @@
     include 'header.php';
     include 'bdd/login.php';
     include 'listfile.php';
+    // include 'cron.php';
+
 
     // include 'uploads/store.php';
 ?>
