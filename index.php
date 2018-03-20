@@ -1,31 +1,12 @@
 <?php
     include 'header.php';
     include 'bdd/login.php';
+    include 'listfile.php';
+
     // include 'uploads/store.php';
 ?>
  <!-- Navigation haut de page // A finir, faire entièrement en js ?-->
-<nav id="navigation" class="navbar navbar-expand-lg navbar-light mainNav">
-    <h1 class="navbar-brand mainTitle col-8">File Uploader</h1>
-    <button class="navbar-toggler burgerBtn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse col-12 col-lg-2" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <button id="btnInscription" type="button" class="btn" data-toggle="modal" data-target="#inscriptionModal">
-                    Inscription
-                </button>
-            </li>
-            <li class="nav-item">
-                <button id="btnConnexion" type="button" class="btn" data-toggle="modal" data-target="#connexionModal">
-                    Connexion
-                </button>
-            </li>
-            <a id="btnDeconnexion" type="button" class="btn" href="uploads/deconnexion.php">Déconnexion</a>
-        </ul>
-    </div>
-</nav>
-
+<?php include 'btnnav.php' ?>
  <!-- Fin de navigation haut de page -->
 
 <!-- Modal inscription -->
@@ -59,6 +40,7 @@
 </div>
 
 <!-- Fin du modal inscription -->
+
 
 <!-- Modal connexion -->
 <div class="modal fade" id="connexionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -111,12 +93,16 @@
 <!-- Afficher l'activité du compte -->
 
 <div class="col-6 offset-3 fileChooser p-3">
-    <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
+    <form class="text-center" action="listfile.php" method="post" enctype="multipart/form-data">
         <div class="col-12 displayActivity">
             <button type="button" class="btn last-btn" name="listfiles">Activités</button>
         </div>
-        <div class="col-12">
-            <!-- Si possible, afficher les uploads ici -->
+        <div class="col-12" id="resultList">
+            <?php
+            if(isset($_SESSION ['id'])){
+                listActivity();
+            }
+            ?>
         </div>
     </form>
 </div>
