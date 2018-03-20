@@ -85,7 +85,6 @@ if (isset($_POST['formConnexion']))
         $msg = "Tous les champs doivent être complétés. ('Connexion')";
     }
 }
-
 // Fin de connexion d'un membre.
 
 ?>

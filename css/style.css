@@ -6,6 +6,27 @@ body {
     background-size: cover;
 }
 
+.input-file{
+    display: none;
+}
+
+.label-file{
+    font-family: 'Poller One', cursive;
+    background: none;
+    border: solid #353535;
+    color: #353535;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.label-file:hover {
+    background: #353535;
+    border: solid #353535;
+    color: #ff8300;
+}
+
 .box{
     border: 1px solid black;
 }
