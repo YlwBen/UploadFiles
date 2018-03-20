@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 function ConnectBDD(){
      $servername = "localhost";
      $username = "root";

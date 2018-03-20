@@ -1,6 +1,8 @@
 <?php
     include 'header.php';
     include 'bdd/login.php';
+    include 'listfile.php';
+
     // include 'uploads/store.php';
 ?>
  <!-- Navigation haut de page // A finir, faire entièrement en js ?-->
@@ -59,6 +61,7 @@
 
 <!-- Fin du modal inscription -->
 
+
 <!-- Modal connexion -->
 <div class="modal fade" id="connexionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
  <div class="modal-dialog" role="document">
@@ -109,12 +112,12 @@
 <!-- Afficher l'activité du compte -->
 
 <div class="col-6 offset-3 fileChooser p-3">
-    <form class="text-center" action="uploads/store.php" method="post" enctype="multipart/form-data">
+    <form class="text-center" action="listfile.php" method="post" enctype="multipart/form-data">
         <div class="col-12 displayActivity">
             <button type="button" class="btn last-btn" name="listfiles">Activité</button>
         </div>
-        <div class="col-12">
-            <!-- Si possible, afficher les uploads ici -->
+        <div class="col-12" id="resultList">
+            <?php listActivity(); ?>
         </div>
     </form>
 </div>
