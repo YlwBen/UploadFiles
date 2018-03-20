@@ -12,7 +12,7 @@ function upload($connect){
     $name = $_FILES['fileToUpload']['name'];
     $size = $_FILES['fileToUpload']['size'];
     $tmp_name = $_FILES['fileToUpload']['tmp_name']; // Lien de DL ?
-    $location = "../upload/img/".$name;
+    $location = $name;
 
     if(isset($_SESSION['id']) AND ($_SESSION['id'] > 0)) {
         echo "C'est un membre du site.";

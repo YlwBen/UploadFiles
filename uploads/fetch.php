@@ -8,7 +8,7 @@ function uploadBDD($connect){
         $size = $_FILES['fileToUpload']['size'];
         $type = $_FILES['fileToUpload']['type'];
         $tmp_name = $_FILES['fileToUpload']['tmp_name'];
-        $location = "../upload/img/".$name;
+        $location = $name;
         $iduser = $_SESSION['id'];
     }
     try{
