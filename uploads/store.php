@@ -56,13 +56,10 @@ function upload($connect){
             $msg = "STOP ! Soit votre fichier dépasse 3Mo soit il n'y a pas de fichier. ";
         }
 
-<<<<<<< HEAD
     }
     $_SESSION['message'] = $msg;
     header('location:'.$lastpage);
-=======
-    }header('location: ../index.php');
->>>>>>> 69472f18581e7306f18ed767023de95db32adde5
+
 
 }
 ?>

@@ -21,7 +21,7 @@
             <div class='collapse navbar-collapse col-12 col-lg-2' id='navbarSupportedContent'>
                 <ul class='navbar-nav mr-auto'>
                     <li class='nav-item'>
-                        <button id='btnInscription' type='button' class='btn' data-toggle='modal' data-target='inscriptionModal'>
+                        <button id='btnInscription' type='button' class='btn' data-toggle='modal' data-target='#inscriptionModal'>
                             Inscription
                         </button>
                     </li>
