@@ -88,8 +88,16 @@ body {
     border: solid #353535;
     color: #ff8300;
 }
+#btnDeconnexion{
+    font-family: 'Poller One', cursive;
+    margin: 10px;
+    background: #353535;
+    border: solid #353535;
+    color: #ff8300;
+}
 
-#btnInscription:hover, #btnConnexion:hover{
+
+#btnInscription:hover, #btnConnexion:hover,#btnDeconnexion:hover {
     background: none;
     border: solid #353535;
     color: #353535;
@@ -125,6 +133,7 @@ body {
     .mainTitle{font-size: 23px;}
     #btnInscription{font-size: 13px;}
     #btnConnexion{font-size: 13px;}
+    #btnDeconnexion{font-size: 13px;}
 }
 @media screen and (max-width: 1600px){
     .mainTitle{margin-left: 0px;}

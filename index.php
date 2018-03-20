@@ -1,4 +1,6 @@
 <?php
+// Start the session
+session_start();
     include 'header.php';
     include 'bdd/login.php';
     // include 'uploads/store.php';
@@ -20,6 +22,9 @@
                 <button id="btnConnexion" type="button" class="btn" data-toggle="modal" data-target="#connexionModal">
                     Connexion
                 </button>
+                <a href="uploads/deconnexion.php">Se deconnecter</a>
+                
+
             </li>
         </ul>
     </div>

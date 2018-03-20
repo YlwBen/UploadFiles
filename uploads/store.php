@@ -5,7 +5,7 @@ $connect=connectBDD();
 function upload($connect){
     //Gère la partie upload image
     $target_dir = "img/";
-    $target_file = $target_dir . basename ($_FILES["fileToUpload"]["name"]);
+    $target_file = $target_dir.basename ($_FILES["fileToUpload"]["name"]);
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
     $lastpage = $_SERVER['HTTP_REFERER'];

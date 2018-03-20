@@ -18,5 +18,6 @@ if(isset($_GET['id']) AND $_GET['id'] > 0)
     echo '<font color ="white">Mail : '.$userinfo['email']."</font> <br />";
 }
   ?>
+
 </div>
 <!-- Fin d'ecran d'affichage -->
