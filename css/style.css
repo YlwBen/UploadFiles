@@ -6,6 +6,19 @@ body {
     background-size: cover;
 }
 
+.input-file{
+    display: none;
+}
+
+.label-file{
+    font-family: 'Poller One', cursive;
+    background: #ff8300;
+    border: solid #353535;
+    color: #353535;
+    margin: 10px;
+    border-radius: 4px;
+}
+
 .box{
     border: 1px solid black;
 }
