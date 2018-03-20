@@ -98,7 +98,7 @@
 <div class="col-6 offset-3 fileChooser p-3">
     <form class="text-center" action="listfile.php" method="post" enctype="multipart/form-data">
         <div class="col-12 displayActivity">
-            <button id="activity" type="button" class="btn last-btn" name="listfiles">Activités</button>
+            <button id="activity" type="button" class="btn last-btn" name="listfiles">Liste des uploads</button>
         </div>
         <div class="col-12 text-truncate" id="resultList">
             <?php
