@@ -10,7 +10,8 @@ function listActivity(){
 ?>
         <p class="my-4 listActivity">
             <strong>Fichier</strong> : <?php echo $data['name']; ?>; <br />
-            <strong>Type de fichier</strong> : <?php echo $data['type']; ?>; <strong>Taille du Fichier</strong> : <?php echo $data['size']; ?> octets; <strong>Date</strong> : <?php echo $data['date']; ?>
+            <strong>Type de fichier</strong> : <?php echo $data['type']; ?>; <strong>Taille du Fichier</strong> : <?php echo $data['size']; ?> octets; <strong>Date</strong> : <?php echo $data['date']; ?><br />
+            <strong>Lien</strong> : <a href="uploads/img/<?php echo $data['location']; ?>" download="uploads/img/<?php echo $data['location']; ?>">Télécharger</a>.
         </p>
 <?php
     }

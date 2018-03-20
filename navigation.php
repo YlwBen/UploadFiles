@@ -7,7 +7,7 @@
             <button class='navbar-toggler burgerBtn' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                 <span class='navbar-toggler-icon'></span>
             </button>
-            <div class='collapse navbar-collapse col-12 col-lg-2' id='navbarSupportedContent'>
+            <div class='collapse navbar-collapse col-12 col-lg-1' id='navbarSupportedContent'>
                 <a id='btnDeconnexion' type='button' class='btn' href='uploads/deconnexion.php'>Déconnexion</a>
             </div>
         </nav>";
@@ -21,7 +21,7 @@
             <div class='collapse navbar-collapse col-12 col-lg-2' id='navbarSupportedContent'>
                 <ul class='navbar-nav mr-auto'>
                     <li class='nav-item'>
-                        <button id='btnInscription' type='button' class='btn' data-toggle='modal' data-target='inscriptionModal'>
+                        <button id='btnInscription' type='button' class='btn' data-toggle='modal' data-target='#inscriptionModal'>
                             Inscription
                         </button>
                     </li>

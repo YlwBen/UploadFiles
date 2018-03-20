@@ -72,7 +72,7 @@ if (isset($_POST['formConnexion']))
             $userinfo = $requser->fetch();
             $_SESSION['id'] = $userinfo['id'];
             $_SESSION['pseudo'] = $userinfo['pseudo'];
-            $_SESSION['mail'] = $userinfo['mail'];
+            $_SESSION['email'] = $userinfo['mail'];
             header("Location: index.php?id=".$_SESSION['id']);
         }
         else
